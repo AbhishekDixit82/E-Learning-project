@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Poppins:wght@600&family=Shantell+Sans:ital,wght@0,400;0,800;1,300;1,800&display=swap');
+
+body {
+  background: url("https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg");
+  background-size: cover;
+  background-position: center;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: green;
+  color: #fff;
+  padding: .5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  
+  /* Centering properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 10rem;
+}
+
+.container {
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/015/649/139/small/abstract-fingerprint-scanning-encryption-to-login-cyber-security-icons-on-blue-background-modern-futuristic-vector.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input[type="submit"] {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.login__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

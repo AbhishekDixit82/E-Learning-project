@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="./styles/register.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form action="/register" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone No.</label>
+        <input type="number" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select your gender:</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+          <option value="">Select your City:</option>
+          <option value="Jaipur">Jaipur</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject of Interest:</label>
+        <input type="text" id="subject" name="subject" placeholder="Eg. Artificial Intelligence">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+    <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</body>
+</html>

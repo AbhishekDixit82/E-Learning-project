@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blog Single</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Tech Vector Volume project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/blog_single.css">
+<link rel="stylesheet" type="text/css" href="styles/blog_single_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+			
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<ul class="top_bar_contact_list">
+									<li>
+										<div class="question">Have any questions?</div>
+									</li>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<div>+91-7740854960</div>
+									</li>
+									<li>
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<div>techvectorvolume@gmail.com</div>
+									</li>
+								</ul>
+								<div class="top_bar_login ml-auto">
+									<div class="login_button">
+										<a id="loginLink" href="/register.html">Register or Login</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const username = getCookie('username');
+
+			if (username) {
+				const loginLink = document.getElementById('loginLink');
+				loginLink.textContent = `Welcome,  ${username}`;
+			}
+
+			function getCookie(name) {
+				const value = `; ${document.cookie}`;
+				const parts = value.split(`; ${name}=`);
+				if (parts.length === 2) return parts.pop().split(';').shift();
+			}
+		</script>
+
+		<!-- Header Content -->
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="logo_container">
+								<a href="#">
+									<div class="logo_text"><span>Tech Vector Volume</span></div>
+								</a>
+							</div>
+							<nav class="main_nav_contaner ml-auto">
+								<ul class="main_nav">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="courses.html">Courses</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+
+								<!-- Hamburger -->
+
+								<!-- <div class="shopping_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div> -->
+								<div class="hamburger menu_mm">
+									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+								</div>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Search Panel -->
+		<div class="header_search_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+							<form action="#" class="header_search_form">
+								<input type="search" class="search_input" placeholder="Search" required="required">
+								<button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>			
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<div class="search">
+			<form action="#" class="header_search_form menu_mm">
+				<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+				<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+					<i class="fa fa-search menu_mm" aria-hidden="true"></i>
+				</button>
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="menu_mm"><a href="index.html">Home</a></li>
+				<li class="menu_mm"><a href="#">About</a></li>
+				<li class="menu_mm"><a href="#">Courses</a></li>
+				<li class="menu_mm"><a href="#">Blog</a></li>
+				<li class="menu_mm"><a href="#">Page</a></li>
+				<li class="menu_mm"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="breadcrumbs_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li>Blog Single</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</div>
+
+	<!-- Blog -->
+
+	<div class="blog">
+		<div class="container">
+			<div class="row">
+
+				<!-- Blog Content -->
+				<div class="col-lg-8">
+					<div class="blog_content">
+						<div class="blog_title">Programming Is Learned Faster With These 7 Tips</div>
+						<div class="blog_meta">
+							<ul>
+								<li>Post on <a href="#">Oct. 12, 2022</a></li>
+								<li>By <a href="#">Admin</a></li>
+							</ul>
+						</div>
+						<div class="blog_image"><img src="images/blog_single.png" alt=""></div>
+						<p>Programming is one of the fastest growing industries. The U.S. Bureau of Labor Statistics anticipates development and programming jobs to grow 17% from 2014 to 2024 which is faster than the majority of other industries. Even if you don’t have a computer science degree, you can make a career for yourself as a programmer.</p>
+						<p>With so much information just clicks away nowadays, you can learn how to program on your own time as long as you have some basic computer skills. Actually, you’ll probably never stop learning. As a programmer, technology is always changing, and what works today probably won’t work a year from now.</p>
+						<p>If you want to land a quality job as a programmer, you need to start learning. Because there’s a lot to master, it can take a while to feel you’ve reached an expert level where you can start applying for programming jobs. If you want to learn how to program faster, you’ll need to put your best foot forward with these 7 tips.</p>
+						<div class="blog_quote d-flex flex-row align-items-center justify-content-start">
+							<i class="fa fa-quote-left" aria-hidden="true"></i>
+							<div>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”</div>
+						</div>
+						
+						<div class="blog_subtitle">1. Stop waiting for the right time.</div>
+						<p>A lot of new programmers put of actually getting started because they’re waiting for the right time. In the age of the internet, there is no “perfect” time to jump in. Yes, it’s overwhelming when you don’t know where to start, but you need to actually get started in the first place.</p>
+						<p>The sooner you start playing with code on your own, the faster you’ll be able to master this skills. Think of coding like learning a language. This is the language of computers, and like any language, you need to know the rules and start trying them for yourself.</p>
+						<p>It’s not enough to know the basics. You need to also play with the code, learn how to make it work for you, and start experimenting. You’re going to make mistakes. Actually, you’re going to make a lot of them. This is good! This means you’re learning. Just make sure you get started.</p>
+
+						<div class="blog_subtitle">2. Revisit the programming basics.</div>
+						<p>As we said before, programming is like learning a language. Like any language, you need to know the basics. You’ll likely need to keep learning these basics over and over again until they feel like second nature. Even then, it’s okay to keep revisiting them over time as you learn new skills.</p>
+						<p>The elementary skills are what forms your foundation. If you don’t have a strong foundation, you’re going to be prone to mistakes later in your career. No matter how competent you feel you are with parts of coding, don’t’ skip the basics. Make sure you save them somewhere so you can come back to them later.</p>
+
+						<div class="blog_subtitle">3. Code by hand.</div>
+						<p>We all know how numb our brains get when we stare at a computer screen all day. Step away from the computer and get out old-fashioned pen and paper. Start writing your code and think about every line individually. Even though it’s hard, try not to check your code while you’re writing it. Put your critical thinking skills to work and test your understanding.</p>
+						<p>This is actually a great practice to get into since writing by hand is a standard of many job processes today. When you finally go in for that interview, you’ll be confident and ready to write by hand. It’s a true show of mastery.</p>
+
+						<div class="blog_subtitle">4. Use online resources.</div>
+						<p>The internet is a wonderful resource for new (and experienced!) coders. You can find a multitude of online resources from YouTube tutorials to GitHub. You can find courses that will take you step-by-step through mastering this process, or you can just look for tutorials as you find yourself facing new questions.</p>
+						<p>One of the most beneficial parts of online resources is that they’re always changing. You can learn about anything from free log management to Amazon Cloudwatch. In this competitive market, you need to know as much as you can about the latest trends and industry changes. Thanks to the internet, this is possible.</p>
+
+						<div class="blog_images">
+							<div class="row">
+								<div class="col-lg-6 blog_images_col"><div class="blog_image_large"><img src="images/blog_images_1.png" alt=""></div></div>
+							</div>
+						</div>
+
+						<div class="blog_subtitle">5. Escape the samples.</div>
+						<p>Using sample code is a great way to learn. GitHub and other platforms make it easy to find new sample code to use on your own, but that doesn’t mean you shouldn’t push beyond this. Let’s face it: sample code isn’t learning. Understanding the code on the screen and actually writing the code organically are two different things.</p>
+						<p>As a programmer, you need to interact with your code on a deeper level. That means writing it yourself, testing it, and learning from your mistakes. If you’re not ready to write organic code yourself, start by altering sample code. Write new lines, make changes, and start building on what’s already there. This will help you grow as a coder until you’re ready to go solo.</p>
+
+						<div class="blog_subtitle">6. Know when to ask for help (and when not to).</div>
+						<p>Asking for help is an important part of being a programmer. Sometimes you really do need a helping hand to get the ball rolling, especially if you’ve been stuck for a while. That being said, you shouldn’t jump on a programming forum the second you run into an issue. There’s a lot to be gained by working through these problems on your own.</p>
+						<p>Realize that as a professional programmer, you’ll need to know how to manage your own problems. Troubleshooting is simply a reality of working with computers. If small challenges trip you up or frustrate you, this might not be the right career path for you.</p>
+						<p>While you shouldn’t feel like you can’t ask for help when you really need it, don’t abuse it. A lot of the coding world is based on collaboration, so asking for help will teach you to work with a team. However, always try to work on your own bugs by yourself first to see if you can work it out naturally.</p>
+
+						<div class="blog_subtitle">7. Step away from the screen.</div>
+						<p>Coding can be addictive, and this means you need to know when to step away from the screen. Yes, working on lines of code and bugs will help you learn faster, but there is such thing as burnout. You want to keep your mind fresh so you can tackle new problems with confidence, so know when it’s time to call it a day.</p>
+						<p>It’s easy to spiral into negativity if you’ve been struggling with a bug or error for a few hours. Let your mind refresh. Turn off your computer and do something else. Go outside, take a walk, or even just scroll through your phone. Anything that gives you mind a much-needed break.</p>
+						<p>Programmers need thick skin. Things will go wrong. Sometimes, those things are out of your control. As a programmer, you’re a problem solver. It’s okay if you need a break to clear your head for those problems, and it’s okay if you need to walk away sometimes.</p>
+
+						<div class="blog_subtitle">Landing a Job</div>
+						<p>If you want to land that programming job of your dreams, you need to be willing to put in the work. While anyone can code, it’s still a lot of hard work. Not everyone will be up for the challenge and ongoing learning.</p>
+						<p>The best way to learn is to simply sit down and do the work. It’s a lot of practice and patience, but it’s well worth it. As long as you use these 7 tips above, you’ll overcome the doubts and find yourself with an exciting job offer.</p>
+
+					</div>
+					<div class="blog_extra d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+						<div class="blog_tags">
+							<span>Tags: </span>
+							<ul>
+								<li><a href="#">Programming</a>, </li>
+								<li><a href="#">Tips</a>, </li>
+								<li><a href="#">Tutorials</a>, </li>
+							</ul>
+						</div>
+						<div class="blog_social ml-lg-auto">
+							<span>Share: </span>
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Comments -->
+					<div class="comments_container">
+						<div class="comments_title"><span>3</span> Comments</div>
+						<ul class="comments_list">
+							<li>
+								<div class="comment_item d-flex flex-row align-items-start jutify-content-start">
+									<div class="comment_image"><div><img src="images/comment_1.png" alt=""></div></div>
+									<div class="comment_content">
+										<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+											<div class="comment_author"><a href="#">Devananda</a></div>
+											<div class="comment_rating"><div class="rating_r rating_r_4"><i></i><i></i><i></i><i></i><i></i></div></div>
+											<div class="comment_time ml-auto">November 12, 2022</div>
+										</div>
+										<div class="comment_text">
+											<p>Tech Vector Volume helped me understand the concepts through real-life examples. Thanks to you and your team for helping me during such a bad time.</p>
+										</div>
+										<div class="comment_extras d-flex flex-row align-items-center justify-content-start">
+											<div class="comment_extra comment_likes"><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>10</span></a></div>
+											<div class="comment_extra comment_reply"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Reply</span></a></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="comment_item d-flex flex-row align-items-start jutify-content-start">
+									<div class="comment_image"><div><img src="images/comment_2.png" alt=""></div></div>
+									<div class="comment_content">
+										<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+											<div class="comment_author"><a href="#">Sumit Sharma</a></div>
+											<div class="comment_rating"><div class="rating_r rating_r_4"><i></i><i></i><i></i><i></i><i></i></div></div>
+											<div class="comment_time ml-auto">October 30, 2022</div>
+										</div>
+										<div class="comment_text">
+											<p>I'm pursuing B.Tech. in Computer Science from SFIT, BOMBAY. I was having so many difficulties in coding and DSA especially. When I purchased this course, I was shocked to see this type of premium content in a such small amount. Thanks, Akshat for providing me with such a great type of platform having rich content and premium resources.</p>
+										</div>
+										<div class="comment_extras d-flex flex-row align-items-center justify-content-start">
+											<div class="comment_extra comment_likes"><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>15</span></a></div>
+											<div class="comment_extra comment_reply"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Reply</span></a></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="comment_item d-flex flex-row align-items-start jutify-content-start">
+									<div class="comment_image"><div><img src="images/comment_3.png" alt=""></div></div>
+									<div class="comment_content">
+										<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+											<div class="comment_author"><a href="#">Ishika Yadav</a></div>
+											<div class="comment_rating"><div class="rating_r rating_r_4"><i></i><i></i><i></i><i></i><i></i></div></div>
+											<div class="comment_time ml-auto">November 03,2022</div>
+										</div>
+										<div class="comment_text">
+											<p>Tech Vector Volume helped me understand the concepts through real-life examples.</p>
+										</div>
+										<div class="comment_extras d-flex flex-row align-items-center justify-content-start">
+											<div class="comment_extra comment_likes"><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>2</span></a></div>
+											<div class="comment_extra comment_reply"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Reply</span></a></div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="add_comment_container">
+							<div class="add_comment_title">Join the Discussion</div>
+							<div class="add_comment_text">Your email address will not be published. Required fields are marked *</div>
+							<form action="#" class="comment_form">
+								<div>
+									<div class="form_title">Review*</div>
+									<textarea class="comment_input comment_textarea" required="required"></textarea>
+								</div>
+								<div class="row">
+									<div class="col-md-6 input_col">
+										<div class="form_title">Full Name*</div>
+										<input type="text" class="comment_input" required="required">
+									</div>
+									<div class="col-md-6 input_col">
+										<div class="form_title">Email I'd*</div>
+										<input type="text" class="comment_input" required="required">
+									</div>
+								</div>
+								<div class="comment_notify">
+									<input type="checkbox" id="checkbox_notify" name="regular_checkbox" class="regular_checkbox checkbox_account" checked>
+									<label for="checkbox_notify"><i class="fa fa-check" aria-hidden="true"></i></label>
+									<span>Notify me of new posts by email and save my name, email & website in this browser for the next time I comment.</span>
+								</div>
+								<div>
+									<button type="submit" class="comment_button trans_200">submit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<!-- Blog Sidebar -->
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Categories -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">Categories</div>
+							<div class="sidebar_categories">
+								<ul class="categories_list">
+									<li><a href="#" class="clearfix">Designing & Development<span>(29)</span></a></li>
+									<li><a href="#" class="clearfix">Cyber Security & Ethical Hacking<span>(19)</span></a></li>
+									<li><a href="#" class="clearfix">Artificial Intelligence & Machine Learning<span>(16)</span></a></li>
+									<li><a href="#" class="clearfix">Cloud Computing & IoT<span>(07)</span></a></li>
+									<li><a href="#" class="clearfix">UI/UX Designing<span>(25)</span></a></li>
+									<li><a href="#" class="clearfix">Business & Management<span>(18)</span></a></li>
+									<li><a href="#" class="clearfix">HR & Communication<span>(09)</span></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Latest Course -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">Latest Courses</div>
+							<div class="sidebar_latest">
+
+								<!-- Latest Course -->
+								<div class="latest d-flex flex-row align-items-start justify-content-start">
+									<div class="latest_image"><div><img src="images/latest_1.png" alt=""></div></div>
+									<div class="latest_content">
+										<div class="latest_title"><a href="course.html">Automation with Bash Shell Scripting</a></div>
+										<div class="latest_price">₹399</div>
+									</div>
+								</div>
+
+								<!-- Latest Course -->
+								<div class="latest d-flex flex-row align-items-start justify-content-start">
+									<div class="latest_image"><div><img src="images/latest_2.png" alt=""></div></div>
+									<div class="latest_content">
+										<div class="latest_title"><a href="course.html">Photography for Beginners Masterclass</a></div>
+										<div class="latest_price">₹599</div>
+									</div>
+								</div>
+
+								<!-- Latest Course -->
+								<div class="latest d-flex flex-row align-items-start justify-content-start">
+									<div class="latest_image"><div><img src="images/latest_3.png" alt=""></div></div>
+									<div class="latest_content">
+										<div class="latest_title"><a href="course.html">Complete Salesforce Admin with Real time Project Implementation</a></div>
+										<div class="latest_price">₹899</div>
+									</div>
+								</div>
+
+								<!-- Latest Course -->
+								<div class="latest d-flex flex-row align-items-start justify-content-start">
+									<div class="latest_image"><div><img src="images/latest_4.png" alt=""></div></div>
+									<div class="latest_content">
+										<div class="latest_title"><a href="course.html">Business Intelligence with Microsoft Power BI</a></div>
+										<div class="latest_price">₹499</div>
+									</div>
+								</div>
+
+								<!-- Latest Course -->
+								<div class="latest d-flex flex-row align-items-start justify-content-start">
+									<div class="latest_image"><div><img src="images/latest_5.png" alt=""></div></div>
+									<div class="latest_content">
+										<div class="latest_title"><a href="course.html">Security Operations Center - SOC Training Masterclass</a></div>
+										<div class="latest_price">₹599</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- Gallery -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">Milestones</div>
+							<div class="sidebar_gallery">
+								<ul class="gallery_items d-flex flex-row align-items-start justify-content-between flex-wrap">
+									<li class="gallery_item">
+										<div class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center">+</div>
+										<a class="colorbox" href="images/gallery_1_large.png">
+											<img src="images/gallery_1.png" alt="">
+										</a>
+									</li>
+									<li class="gallery_item">
+										<div class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center">+</div>
+										<a class="colorbox" href="images/gallery_2_large.png">
+											<img src="images/gallery_2.png" alt="">
+										</a>
+									</li>
+									<li class="gallery_item">
+										<div class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center">+</div>
+										<a class="colorbox" href="images/gallery_3_large.png">
+											<img src="images/gallery_3.png" alt="">
+										</a>
+									</li>
+									<li class="gallery_item">
+										<div class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center">+</div>
+										<a class="colorbox" href="images/gallery_4_large.png">
+											<img src="images/gallery_4.png" alt="">
+										</a>
+									</li>
+									<li class="gallery_item">
+										<div class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center">+</div>
+										<a class="colorbox" href="images/gallery_5_large.png">
+											<img src="images/gallery_5.png" alt="">
+										</a>
+									</li>
+									<li class="gallery_item">
+										<div class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center">+</div>
+										<a class="colorbox" href="images/gallery_6_large.png">
+											<img src="images/gallery_6.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Tags -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">Tags</div>
+							<div class="sidebar_tags">
+								<ul class="tags_list">
+									<li><a href="#">techvectorvolume</a></li>
+									<li><a href="#">scienceandtechnology</a></li>
+									<li><a href="#">entrepreneurship</a></li>
+									<li><a href="#">innovation</a></li>
+									<li><a href="#">startup</a></li>
+									<li><a href="#">computerscience</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Banner -->
+						<div class="sidebar_section">
+							<div class="sidebar_banner d-flex flex-column align-items-center justify-content-center text-center">
+								<div class="sidebar_banner_background" style="background-image:url(images/banner_1.jpg)"></div>
+								<div class="sidebar_banner_overlay"></div>
+								<div class="sidebar_banner_content">
+									<div class="banner_title">Community Forum</div>
+									<div class="banner_button"><a href="#">join now</a></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Newsletter -->
+
+	<div class="newsletter">
+		<div class="newsletter_background" style="background-image:url(images/newsletter_background.jpg)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="newsletter_container d-flex flex-lg-row flex-column align-items-center justify-content-start">
+
+						<!-- Newsletter Content -->
+						<div class="newsletter_content text-lg-left text-center">
+							<div class="newsletter_title">sign up for premium content & resources</div>
+							<div class="newsletter_subtitle">Subscribe to latest Science & Technology updates</div>
+						</div>
+
+						<!-- Newsletter Form -->
+						<div class="newsletter_form_container ml-lg-auto">
+							<form action="#" id="newsletter_form" class="newsletter_form d-flex flex-row align-items-center justify-content-center">
+								<input type="email" class="newsletter_input" placeholder="Your Email" required="required">
+								<button type="submit" class="newsletter_button">subscribe</button>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_background" style="background-image:url(images/footer_background.png)"></div>
+		<div class="container">
+			<div class="row footer_row">
+				<div class="col">
+					<div class="footer_content">
+						<div class="row">
+
+							<div class="col-lg-3 footer_col">
+					
+								<!-- Footer About -->
+								<div class="footer_section footer_about">
+									<div class="footer_logo_container">
+										<a href="#">
+											<div class="footer_logo_text"><span>Tech Vector Volume</span></div>
+										</a>
+									</div>
+									<div class="footer_about_text">
+										<p>Register now and Join our community.</p>
+									</div>
+									<div class="footer_social">
+										<ul>
+											<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="col-lg-3 footer_col">
+					
+								<!-- Footer Contact -->
+								<div class="footer_section footer_contact">
+									<div class="footer_title">Contact Us</div>
+									<div class="footer_contact_info">
+										<ul>
+											<li>techvectorvolume@gmail.com</li>
+											<li>+91-7740854960</li>
+											<li>Incubation Cell (SRIJAN), SKIT COLLEGE (Jaipur)</li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="col-lg-3 footer_col">
+					
+								<!-- Footer links -->
+								<div class="footer_section footer_links">
+									<div class="footer_title">Contact Us</div>
+									<div class="footer_links_container">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="contact.html">Contact</a></li>
+											<li><a href="#">Services</a></li>
+											<li><a href="courses.html">Courses</a></li>
+											<li><a href="#">Events</a></li>
+											<li><a href="#">Gallery</a></li>
+											<li><a href="#">FAQs</a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="col-lg-3 footer_col clearfix">
+					
+								<!-- Footer links -->
+								<div class="footer_section footer_mobile">
+									<div class="footer_title">Download Now</div>
+									<div class="footer_mobile_content">
+										<div class="footer_image"><a href="#"><img src="images/mobile_1.png" alt=""></a></div>
+										<div class="footer_image"><a href="#"><img src="images/mobile_2.png" alt=""></a></div>
+									</div>
+								</div>
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row copyright_row">
+				<div class="col">
+					<div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
+						<div class="cr_text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://instagram.com/erakshatvocals" target="_blank">Akshat Khandelwal.</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+						<div class="ml-lg-auto cr_links">
+							<ul class="cr_list">
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="js/about.js"></script>
+</body>
+</html>

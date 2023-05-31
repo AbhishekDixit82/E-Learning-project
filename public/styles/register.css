@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Poppins:wght@600&family=Shantell+Sans:ital,wght@0,400;0,800;1,300;1,800&display=swap');
+
+body {
+  background: url("https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: green;
+  color: #fff;
+  padding: .5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  
+  /* Centering properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1.1rem; 
+}
+
+.container {
+  background: url("https://media.istockphoto.com/id/1335515299/vector/social-network-connection-concept-blue-background.jpg?s=612x612&w=0&k=20&c=bfi6qM3YoJh5fcbCw7iudHn1EO75bAZM723fRPPZqDg=");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #0b338ade;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-link a {
+  color: #00007adb;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
